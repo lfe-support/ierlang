@@ -15,9 +15,9 @@ to view IErlang Notebooks in [IPython's NBViewer](http://nbviewer.ipython.org/)
 
 ## Requirements:
 
-* Python 2.7 in your ``$PATH``
+* Either Python 3.4 or 2.7 in your ``$PATH``
+  * If using Python 2.7, you will need ``virtualenv`` installed
 * Erlang installed with ``erl`` and ``escript`` in your ``$PATH``
-* ``virtualenv`` installed
 * ``rebar`` installed
 
 
@@ -47,8 +47,8 @@ Other ``make`` targets are also provided. Some notes about these:
   environment in place, you may use ``make erlclean`` (or ``rebar clean``, of
   course).
 * You don't have to start with the demo; you can be placed into the IPython web
-  view of the ``notebooks`` directory where you can create new notebooks
-  easily. Just use the ``make py2notebook`` target.
+  view of the ``./notebooks`` directory where you can create new notebooks
+  easily. Just use the ``make notebook`` target.
 * If you would like to run the demo again, but don't want to recompile
   everything, you may use the ``make demo-no-deps`` target.
 
